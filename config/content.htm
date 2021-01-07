@@ -21,4 +21,43 @@
 <p>接著到可攜系統啟動虛擬磁碟</p>
 <p>使用git clone下載倉儲</p>
 <p>進入倉儲開始編輯</p>
+<h2>w3</h2>
+<p>亂數分組</p>
+<p><a href="https://s40723136.github.io/cad2020/content/%E7%B5%84%E5%93%A1%E5%90%8D%E5%96%AE.html">https://s40723136.github.io/cad2020/content/%E7%B5%84%E5%93%A1%E5%90%8D%E5%96%AE.html</a></p>
+<h2>w4</h2>
 <p></p>
+<h2>w5</h2>
+<p></p>
+<h2>w7</h2>
+<p><span>修改可攜系統中start.bat</span></p>
+<p><span>改成</span></p>
+<div class="line number1 index0 alt2"><code class="js plain">set path_julia=%Disk%:\julia-1.5.2\bin;</code></div>
+<div class="line number2 index1 alt1"><code class="js plain">set path_tcc=%Disk%:\tcc\;</code></div>
+<div class="line number3 index2 alt2"><code class="js plain">set path_gnuplot=%Disk%:\gnuplot\bin;</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">path=%Disk%:;%path_python%;%path_portablegit%;%path_julia%;%path_tcc%;%path_gnuplot%;%path%;</code></div>
+<div class="line number4 index3 alt1"><code class="js plain"></code></div>
+<div class="line number4 index3 alt1"><code class="js plain">然後stop.bat重啟start.bat</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">輸入tcc,若有東西代表Y:有tcc目錄</code></div>
+<div class="line number4 index3 alt1">
+<p>修改 SciTE 編輯器中的 cpp.properties</p>
+<p>讓 Tools -&gt; Go 可以呼叫 tcc.exe</p>
+<p>作法為將滑鼠指向 SciTE 下拉式功能表 Options 往下點擊 Open cpp.properties 編輯設定檔案, 並且勾選Line Number 在編輯器中顯示行號,修改476行之後的設定</p>
+<p><span>ccopts=-pedantic -Os</span></p>
+<div class="line number4 index3 alt1"><code class="js plain">cc=y:/tcc/tcc.exe -run</code></div>
+<div class="line number4 index3 alt1"><code class="js plain">ccc=y:/tcc/tcc.exe -run</code></div>
+<div class="line number4 index3 alt1">
+<div class="line number7 index6 alt2"><code class="js plain">make.command=make</code></div>
+<div class="line number8 index7 alt1"><code class="js plain">command.compile.*.c=$(ccc) -std=c99</code></div>
+<div class="line number9 index8 alt2"><code class="js plain">command.build.*.c=$(make.command)</code></div>
+<div class="line number10 index9 alt1"><code class="js plain">command.build.*.h=$(make.command)</code></div>
+<div class="line number11 index10 alt2"><code class="js plain">command.clean.*.c=$(make.command) clean</code></div>
+<div class="line number12 index11 alt1"><code class="js plain">command.clean.*.h=$(make.command) clean</code></div>
+<div class="line number13 index12 alt2"><code class="js plain">command.go.*.c=$(cc) $(FileNameExt)</code></div>
+</div>
+</div>
+<div class="line number3 index2 alt2">
+<div class="line number2 index1 alt1">
+<h2 class="line number13 index12 alt2">w8</h2>
+<p></p>
+</div>
+</div>
